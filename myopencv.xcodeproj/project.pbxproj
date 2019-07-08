@@ -21,7 +21,22 @@
 		B69DD66522D2FEB200573396 /* at.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = B69DD48822D2E39800573396 /* at.txt */; };
 		B69DD66622D2FEB200573396 /* haarcascade_frontalface_alt2.xml in CopyFiles */ = {isa = PBXBuildFile; fileRef = B69DD48522D2E39800573396 /* haarcascade_frontalface_alt2.xml */; };
 		B69DD66722D2FEB200573396 /* Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = B69DD48322D2E39800573396 /* Info.plist */; };
-		B69DD66B22D30DDA00573396 /* train.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B69DD48622D2E39800573396 /* train.cpp */; };
+		B69DD67022D30FA800573396 /* libopencv_objdetect.4.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B69DD48D22D2E55500573396 /* libopencv_objdetect.4.1.1.dylib */; };
+		B69DD67122D30FA800573396 /* libopencv_imgcodecs.4.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B69DD48F22D2E57300573396 /* libopencv_imgcodecs.4.1.1.dylib */; };
+		B69DD67222D30FA800573396 /* libopencv_face.4.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B69DD49022D2E57300573396 /* libopencv_face.4.1.1.dylib */; };
+		B69DD67322D30FA800573396 /* libopencv_videoio.4.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B69DD49122D2E57300573396 /* libopencv_videoio.4.1.1.dylib */; };
+		B69DD67422D30FA800573396 /* libopencv_ml.4.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B69DD49222D2E57300573396 /* libopencv_ml.4.1.1.dylib */; };
+		B69DD67522D30FA800573396 /* libopencv_core.4.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B69DD49322D2E57300573396 /* libopencv_core.4.1.1.dylib */; };
+		B69DD67622D30FA800573396 /* libopencv_highgui.4.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B69DD49422D2E57300573396 /* libopencv_highgui.4.1.1.dylib */; };
+		B69DD67722D30FA800573396 /* libopencv_imgproc.4.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B69DD49522D2E57300573396 /* libopencv_imgproc.4.1.1.dylib */; };
+		B69DD67A22D30FA800573396 /* att_faces in CopyFiles */ = {isa = PBXBuildFile; fileRef = B69DD65B22D2E6A100573396 /* att_faces */; };
+		B69DD67B22D30FA800573396 /* abc.xml in CopyFiles */ = {isa = PBXBuildFile; fileRef = B69DD48722D2E39800573396 /* abc.xml */; };
+		B69DD67C22D30FA800573396 /* asdf in CopyFiles */ = {isa = PBXBuildFile; fileRef = B69DD48422D2E39800573396 /* asdf */; };
+		B69DD67D22D30FA800573396 /* at.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = B69DD48822D2E39800573396 /* at.txt */; };
+		B69DD67E22D30FA800573396 /* haarcascade_frontalface_alt2.xml in CopyFiles */ = {isa = PBXBuildFile; fileRef = B69DD48522D2E39800573396 /* haarcascade_frontalface_alt2.xml */; };
+		B69DD67F22D30FA800573396 /* Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = B69DD48322D2E39800573396 /* Info.plist */; };
+		B69DD68522D3103800573396 /* trainface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B69DD48622D2E39800573396 /* trainface.cpp */; };
+		B69DD68622D3103E00573396 /* spotface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B69DD48922D2E39800573396 /* spotface.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +55,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B69DD67922D30FA800573396 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B69DD67A22D30FA800573396 /* att_faces in CopyFiles */,
+				B69DD67B22D30FA800573396 /* abc.xml in CopyFiles */,
+				B69DD67C22D30FA800573396 /* asdf in CopyFiles */,
+				B69DD67D22D30FA800573396 /* at.txt in CopyFiles */,
+				B69DD67E22D30FA800573396 /* haarcascade_frontalface_alt2.xml in CopyFiles */,
+				B69DD67F22D30FA800573396 /* Info.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -47,10 +77,10 @@
 		B69DD48322D2E39800573396 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B69DD48422D2E39800573396 /* asdf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = asdf; sourceTree = "<group>"; };
 		B69DD48522D2E39800573396 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
-		B69DD48622D2E39800573396 /* train.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = train.cpp; sourceTree = "<group>"; };
+		B69DD48622D2E39800573396 /* trainface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trainface.cpp; sourceTree = "<group>"; };
 		B69DD48722D2E39800573396 /* abc.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = abc.xml; sourceTree = "<group>"; };
 		B69DD48822D2E39800573396 /* at.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = at.txt; sourceTree = "<group>"; };
-		B69DD48922D2E39800573396 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		B69DD48922D2E39800573396 /* spotface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spotface.cpp; sourceTree = "<group>"; };
 		B69DD48D22D2E55500573396 /* libopencv_objdetect.4.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.4.1.1.dylib; path = ../../../../../usr/local/lib/libopencv_objdetect.4.1.1.dylib; sourceTree = "<group>"; };
 		B69DD48F22D2E57300573396 /* libopencv_imgcodecs.4.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.4.1.1.dylib; path = ../../../../../usr/local/lib/libopencv_imgcodecs.4.1.1.dylib; sourceTree = "<group>"; };
 		B69DD49022D2E57300573396 /* libopencv_face.4.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_face.4.1.1.dylib; path = ../../../../../usr/local/lib/libopencv_face.4.1.1.dylib; sourceTree = "<group>"; };
@@ -60,6 +90,7 @@
 		B69DD49422D2E57300573396 /* libopencv_highgui.4.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.4.1.1.dylib; path = ../../../../../usr/local/lib/libopencv_highgui.4.1.1.dylib; sourceTree = "<group>"; };
 		B69DD49522D2E57300573396 /* libopencv_imgproc.4.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.4.1.1.dylib; path = ../../../../../usr/local/lib/libopencv_imgproc.4.1.1.dylib; sourceTree = "<group>"; };
 		B69DD65B22D2E6A100573396 /* att_faces */ = {isa = PBXFileReference; lastKnownFileType = folder; path = att_faces; sourceTree = "<group>"; };
+		B69DD68322D30FA800573396 /* trainopencv */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = trainopencv; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +106,21 @@
 				B69DD49A22D2E57300573396 /* libopencv_core.4.1.1.dylib in Frameworks */,
 				B69DD49B22D2E57300573396 /* libopencv_highgui.4.1.1.dylib in Frameworks */,
 				B69DD49C22D2E57300573396 /* libopencv_imgproc.4.1.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69DD66F22D30FA800573396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69DD67022D30FA800573396 /* libopencv_objdetect.4.1.1.dylib in Frameworks */,
+				B69DD67122D30FA800573396 /* libopencv_imgcodecs.4.1.1.dylib in Frameworks */,
+				B69DD67222D30FA800573396 /* libopencv_face.4.1.1.dylib in Frameworks */,
+				B69DD67322D30FA800573396 /* libopencv_videoio.4.1.1.dylib in Frameworks */,
+				B69DD67422D30FA800573396 /* libopencv_ml.4.1.1.dylib in Frameworks */,
+				B69DD67522D30FA800573396 /* libopencv_core.4.1.1.dylib in Frameworks */,
+				B69DD67622D30FA800573396 /* libopencv_highgui.4.1.1.dylib in Frameworks */,
+				B69DD67722D30FA800573396 /* libopencv_imgproc.4.1.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +151,8 @@
 				B69DD48822D2E39800573396 /* at.txt */,
 				B69DD48522D2E39800573396 /* haarcascade_frontalface_alt2.xml */,
 				B69DD48322D2E39800573396 /* Info.plist */,
-				B69DD48922D2E39800573396 /* main.cpp */,
-				B69DD48622D2E39800573396 /* train.cpp */,
+				B69DD48922D2E39800573396 /* spotface.cpp */,
+				B69DD48622D2E39800573396 /* trainface.cpp */,
 				B6AD39AA227EBA500078C024 /* Products */,
 				B69DD48C22D2E55500573396 /* Frameworks */,
 			);
@@ -116,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				B69DD2C122D2E37E00573396 /* myopencv */,
+				B69DD68322D30FA800573396 /* trainopencv */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +186,24 @@
 			name = myopencv;
 			productName = myopencv;
 			productReference = B69DD2C122D2E37E00573396 /* myopencv */;
+			productType = "com.apple.product-type.tool";
+		};
+		B69DD66C22D30FA800573396 /* trainopencv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B69DD68022D30FA800573396 /* Build configuration list for PBXNativeTarget "trainopencv" */;
+			buildPhases = (
+				B69DD66D22D30FA800573396 /* Sources */,
+				B69DD66F22D30FA800573396 /* Frameworks */,
+				B69DD67822D30FA800573396 /* Run Script */,
+				B69DD67922D30FA800573396 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = trainopencv;
+			productName = myopencv;
+			productReference = B69DD68322D30FA800573396 /* trainopencv */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -168,12 +233,32 @@
 			projectRoot = "";
 			targets = (
 				B69DD2C022D2E37E00573396 /* myopencv */,
+				B69DD66C22D30FA800573396 /* trainopencv */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		B69DD65E22D2E74200573396 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+		B69DD67822D30FA800573396 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
 			files = (
@@ -199,7 +284,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B69DD66B22D30DDA00573396 /* train.cpp in Sources */,
+				B69DD68622D3103E00573396 /* spotface.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69DD66D22D30FA800573396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69DD68522D3103800573396 /* trainface.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +314,34 @@
 			name = Debug;
 		};
 		B69DD2C722D2E37E00573396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8G7DRCTZEQ;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = /usr/local/include/opencv4/;
+			};
+			name = Release;
+		};
+		B69DD68122D30FA800573396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8G7DRCTZEQ;
+				HEADER_SEARCH_PATHS = "";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = /usr/local/include/opencv4/;
+			};
+			name = Debug;
+		};
+		B69DD68222D30FA800573396 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
@@ -353,6 +474,15 @@
 			buildConfigurations = (
 				B69DD2C622D2E37E00573396 /* Debug */,
 				B69DD2C722D2E37E00573396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B69DD68022D30FA800573396 /* Build configuration list for PBXNativeTarget "trainopencv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69DD68122D30FA800573396 /* Debug */,
+				B69DD68222D30FA800573396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
