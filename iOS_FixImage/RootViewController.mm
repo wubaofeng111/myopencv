@@ -164,8 +164,11 @@ typedef UIButton* BFButton;
     
     pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(Pan:)];
     [imageView addGestureRecognizer:pan];
-    
-    [self StartFixImage:"/Users/friday/Desktop/abc/fix.jpg"];
+    NSLog(@"%@",[[NSFileManager defaultManager] currentDirectoryPath]);
+    [[NSFileManager defaultManager] changeCurrentDirectoryPath:[NSBundle mainBundle].bundlePath];
+    NSLog(@"%@",[[NSFileManager defaultManager] currentDirectoryPath]);
+    perror("文件路径");
+    [self StartFixImage:"fix.jpg"];
     // Do any additional setup after loading the view.
 }
 -(void)ShowImg:(UIButton*)sender
@@ -235,6 +238,7 @@ static int lineWidth = 20;
     inpaintMask = Mat::zeros(img.size(), CV_8U);
     width = img.cols;
     height= img.rows;
+    
     cvtColor(img, img, COLOR_BGR2RGB);
     //    imshow("image", img);
     [self ShowImage:img];

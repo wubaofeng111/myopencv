@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOS_FixImage/RootViewController.mm"
-            timestampString = "584269949.122895"
+            timestampString = "584270556.709325"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "240"
-            endingLineNumber = "240"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
             landmarkName = "-StartFixImage:"
             landmarkType = "7">
          </BreakpointContent>

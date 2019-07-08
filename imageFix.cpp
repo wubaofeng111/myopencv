@@ -73,6 +73,8 @@ void printType()
 
 int main()
 {
+    RNG r;
+    
     Mat img0 = imread(filePath,-1);
     if (img0.empty()) {
         cout<<"不能打开图片"<<filePath<<"."<<endl;
