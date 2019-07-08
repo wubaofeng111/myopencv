@@ -53,6 +53,12 @@
 		B69DD69A22D3126900573396 /* Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = B69DD48322D2E39800573396 /* Info.plist */; };
 		B69DD6A222D312D100573396 /* imageFix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B69DD69F22D312B200573396 /* imageFix.cpp */; };
 		B69DD6A422D315B400573396 /* libopencv_photo.4.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B69DD6A322D315B400573396 /* libopencv_photo.4.1.1.dylib */; };
+		B69DD6AF22D32BB100573396 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B69DD6AE22D32BB100573396 /* AppDelegate.m */; };
+		B69DD6B222D32BB100573396 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = B69DD6B122D32BB100573396 /* RootViewController.mm */; };
+		B69DD6B722D32BB200573396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69DD6B622D32BB200573396 /* Assets.xcassets */; };
+		B69DD6BA22D32BB200573396 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69DD6B822D32BB200573396 /* LaunchScreen.storyboard */; };
+		B69DD6BD22D32BB200573396 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = B69DD6BC22D32BB200573396 /* main.mm */; };
+		B69DD6C122D32C9100573396 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69DD6A522D3299700573396 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -126,6 +132,16 @@
 		B69DD69F22D312B200573396 /* imageFix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = imageFix.cpp; sourceTree = "<group>"; };
 		B69DD6A022D312B200573396 /* imageFix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = imageFix.hpp; sourceTree = "<group>"; };
 		B69DD6A322D315B400573396 /* libopencv_photo.4.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_photo.4.1.1.dylib; path = ../../../../../usr/local/lib/libopencv_photo.4.1.1.dylib; sourceTree = "<group>"; };
+		B69DD6A522D3299700573396 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		B69DD6AB22D32BB100573396 /* iOS_FixImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_FixImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69DD6AD22D32BB100573396 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B69DD6AE22D32BB100573396 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B69DD6B022D32BB100573396 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		B69DD6B122D32BB100573396 /* RootViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RootViewController.mm; sourceTree = "<group>"; };
+		B69DD6B622D32BB200573396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B69DD6B922D32BB200573396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B69DD6BB22D32BB200573396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B69DD6BC22D32BB200573396 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,12 +191,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B69DD6A822D32BB100573396 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69DD6C122D32C9100573396 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B69DD48C22D2E55500573396 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B69DD6A522D3299700573396 /* opencv2.framework */,
 				B69DD6A322D315B400573396 /* libopencv_photo.4.1.1.dylib */,
 				B69DD49322D2E57300573396 /* libopencv_core.4.1.1.dylib */,
 				B69DD49022D2E57300573396 /* libopencv_face.4.1.1.dylib */,
@@ -192,6 +217,21 @@
 				B69DD48D22D2E55500573396 /* libopencv_objdetect.4.1.1.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B69DD6AC22D32BB100573396 /* iOS_FixImage */ = {
+			isa = PBXGroup;
+			children = (
+				B69DD6AD22D32BB100573396 /* AppDelegate.h */,
+				B69DD6AE22D32BB100573396 /* AppDelegate.m */,
+				B69DD6B022D32BB100573396 /* RootViewController.h */,
+				B69DD6B122D32BB100573396 /* RootViewController.mm */,
+				B69DD6B622D32BB200573396 /* Assets.xcassets */,
+				B69DD6B822D32BB200573396 /* LaunchScreen.storyboard */,
+				B69DD6BB22D32BB200573396 /* Info.plist */,
+				B69DD6BC22D32BB200573396 /* main.mm */,
+			);
+			path = iOS_FixImage;
 			sourceTree = "<group>";
 		};
 		B6AD39A0227EBA500078C024 = {
@@ -207,6 +247,7 @@
 				B69DD48622D2E39800573396 /* trainface.cpp */,
 				B69DD69F22D312B200573396 /* imageFix.cpp */,
 				B69DD6A022D312B200573396 /* imageFix.hpp */,
+				B69DD6AC22D32BB100573396 /* iOS_FixImage */,
 				B6AD39AA227EBA500078C024 /* Products */,
 				B69DD48C22D2E55500573396 /* Frameworks */,
 			);
@@ -218,6 +259,7 @@
 				B69DD2C122D2E37E00573396 /* myopencv */,
 				B69DD68322D30FA800573396 /* trainopencv */,
 				B69DD69E22D3126900573396 /* imageFix */,
+				B69DD6AB22D32BB100573396 /* iOS_FixImage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -279,6 +321,23 @@
 			productReference = B69DD69E22D3126900573396 /* imageFix */;
 			productType = "com.apple.product-type.tool";
 		};
+		B69DD6AA22D32BB100573396 /* iOS_FixImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B69DD6BE22D32BB200573396 /* Build configuration list for PBXNativeTarget "iOS_FixImage" */;
+			buildPhases = (
+				B69DD6A722D32BB100573396 /* Sources */,
+				B69DD6A822D32BB100573396 /* Frameworks */,
+				B69DD6A922D32BB100573396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOS_FixImage;
+			productName = iOS_FixImage;
+			productReference = B69DD6AB22D32BB100573396 /* iOS_FixImage.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -291,6 +350,9 @@
 					B69DD2C022D2E37E00573396 = {
 						CreatedOnToolsVersion = 10.2;
 					};
+					B69DD6AA22D32BB100573396 = {
+						CreatedOnToolsVersion = 10.2;
+					};
 				};
 			};
 			buildConfigurationList = B6AD39A4227EBA500078C024 /* Build configuration list for PBXProject "myopencv" */;
@@ -299,6 +361,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B6AD39A0227EBA500078C024;
 			productRefGroup = B6AD39AA227EBA500078C024 /* Products */;
@@ -308,9 +371,22 @@
 				B69DD2C022D2E37E00573396 /* myopencv */,
 				B69DD66C22D30FA800573396 /* trainopencv */,
 				B69DD68722D3126900573396 /* imageFix */,
+				B69DD6AA22D32BB100573396 /* iOS_FixImage */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B69DD6A922D32BB100573396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69DD6BA22D32BB200573396 /* LaunchScreen.storyboard in Resources */,
+				B69DD6B722D32BB200573396 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		B69DD65E22D2E74200573396 /* Run Script */ = {
@@ -397,7 +473,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B69DD6A722D32BB100573396 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69DD6B222D32BB100573396 /* RootViewController.mm in Sources */,
+				B69DD6BD22D32BB200573396 /* main.mm in Sources */,
+				B69DD6AF22D32BB100573396 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B69DD6B822D32BB200573396 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B69DD6B922D32BB200573396 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B69DD2C622D2E37E00573396 /* Debug */ = {
@@ -406,6 +503,10 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8G7DRCTZEQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = "";
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
@@ -420,6 +521,10 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8G7DRCTZEQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = "";
 				INSTALL_PATH = /usr/local/lib;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
@@ -481,6 +586,55 @@
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SYSTEM_HEADER_SEARCH_PATHS = /usr/local/include/opencv4/;
+			};
+			name = Release;
+		};
+		B69DD6BF22D32BB200573396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8G7DRCTZEQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = iOS_FixImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hudun.iOS-FixImage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B69DD6C022D32BB200573396 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8G7DRCTZEQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = iOS_FixImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hudun.iOS-FixImage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -621,6 +775,15 @@
 			buildConfigurations = (
 				B69DD69C22D3126900573396 /* Debug */,
 				B69DD69D22D3126900573396 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B69DD6BE22D32BB200573396 /* Build configuration list for PBXNativeTarget "iOS_FixImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69DD6BF22D32BB200573396 /* Debug */,
+				B69DD6C022D32BB200573396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
