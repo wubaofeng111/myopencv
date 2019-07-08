@@ -126,6 +126,7 @@ typedef UIButton* BFButton;
 
 -(void)ShowImage:(Mat)img
 {
+    
     imageView.image = MatToUIImage(img);
     
 }
@@ -194,8 +195,8 @@ static int lineWidth = 20;
             
             
             
-            line(inpaintMask, prevPt, pt, Scalar::all(255), lineWidth, lineWidth, 0);//mask
-            line(img, prevPt, pt, Scalar::all(255), lineWidth, lineWidth, 0);
+            line(inpaintMask, prevPt, pt, Scalar::all(255), lineWidth, 8, 0);//mask
+            line(img, prevPt, pt, Scalar::all(255), lineWidth, 8, 0);
             prevPt.x = pt.x;
             prevPt.y = pt.y;
 
@@ -234,6 +235,7 @@ static int lineWidth = 20;
     inpaintMask = Mat::zeros(img.size(), CV_8U);
     width = img.cols;
     height= img.rows;
+    cvtColor(img, img, COLOR_BGR2RGB);
     //    imshow("image", img);
     [self ShowImage:img];
 }
