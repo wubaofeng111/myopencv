@@ -176,14 +176,35 @@ void imageShowMany()
     
     Mat display;
     display.create(1240, 1240, CV_8UC3);
+    Size size;
+    size.width = 620;
+    size.height = 620;
     
+    cout<<display.rows<<endl;
+    cout<<display.cols<<endl;
     
     for(int i = 0;i<4;i++)
     {
+        Mat dst = Mat::zeros(620, 620, CV_8UC3);
+        resize(images.at(i), dst, dst.size());
         
+        cout<<dst.rows<<endl;
+        cout<<dst.cols<<endl;
+        
+        int imgRow = i % 2;
+        int imgCol = i / 2;
+        
+        for (int row = 0; row < 620; row++) {
+            for (int col = 0; col < 620 ; col++) {
+                display.at<Vec3b>(imgRow*620+row,imgCol*620+col) = dst.at<Vec3b>(row,col);
+            }
+        }
     }
+
     
-    imshow("1234", images[0]);
+    imshow("合成图片", display);
+    imwrite("/Users/friday/Desktop/abc/图片合成.png", display);
+    
     waitKey();
 }
 
