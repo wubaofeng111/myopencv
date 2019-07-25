@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "151B099622D980CB0067C481"
-               BuildableName = "class_six"
-               BlueprintName = "class_six"
+               BlueprintIdentifier = "151B0A2822DCC0430067C481"
+               BuildableName = "class_ten"
+               BlueprintName = "class_ten"
                ReferencedContainer = "container:myopencv.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "151B099622D980CB0067C481"
-            BuildableName = "class_six"
-            BlueprintName = "class_six"
+            BlueprintIdentifier = "151B0A2822DCC0430067C481"
+            BuildableName = "class_ten"
+            BlueprintName = "class_ten"
             ReferencedContainer = "container:myopencv.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "151B099622D980CB0067C481"
-            BuildableName = "class_six"
-            BlueprintName = "class_six"
+            BlueprintIdentifier = "151B0A2822DCC0430067C481"
+            BuildableName = "class_ten"
+            BlueprintName = "class_ten"
             ReferencedContainer = "container:myopencv.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "151B099622D980CB0067C481"
-            BuildableName = "class_six"
-            BlueprintName = "class_six"
+            BlueprintIdentifier = "151B0A2822DCC0430067C481"
+            BuildableName = "class_ten"
+            BlueprintName = "class_ten"
             ReferencedContainer = "container:myopencv.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
